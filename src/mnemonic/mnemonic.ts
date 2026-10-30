@@ -6,6 +6,7 @@
  * LICENSE file in the root directory of this source tree.
  */
 
+import { Buffer } from 'buffer';
 import nacl from 'tweetnacl';
 import { getSecureRandomNumber } from '../primitives/getSecureRandom';
 import { hmac_sha512 } from '../primitives/hmac_sha512';

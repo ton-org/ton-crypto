@@ -2,8 +2,6 @@
 // import jest from 'jest-mock';
 // The matchers API
 // import expect from 'expect';
-// Buffer API
-import { Buffer } from 'buffer';
 
 // console.warn('setup');
 
@@ -16,4 +14,3 @@ import { Buffer } from 'buffer';
 // };
 // window.jest = jest;
 // window.expect = expect;
-window.Buffer = Buffer;
