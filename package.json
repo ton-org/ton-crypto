@@ -16,7 +16,6 @@
   "devDependencies": {
     "@types/jest": "^27.0.1",
     "@types/node": "^16.7.10",
-    "buffer": "^6.0.3",
     "expect": "^27.1.0",
     "jest": "^27.1.0",
     "jest-mock": "^27.1.0",
@@ -32,6 +31,7 @@
   },
   "dependencies": {
     "@ton/crypto-primitives": "2.1.0",
+    "buffer": "^6.0.3",
     "jssha": "3.2.0",
     "tweetnacl": "1.0.3"
   },

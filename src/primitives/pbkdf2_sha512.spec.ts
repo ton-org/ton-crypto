@@ -6,7 +6,7 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-
+import { Buffer } from 'buffer';
 import { pbkdf2_sha512 } from "./pbkdf2_sha512";
 
 // Test Vectors

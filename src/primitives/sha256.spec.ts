@@ -6,7 +6,7 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-
+import { Buffer } from 'buffer';
 import { sha256, sha256_fallback } from "./sha256";
 
 // Test Vectors

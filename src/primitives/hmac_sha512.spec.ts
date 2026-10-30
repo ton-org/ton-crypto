@@ -6,7 +6,7 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-
+import { Buffer } from 'buffer';
 import { hmac_sha512, hmac_sha512_fallback } from "./hmac_sha512";
 
 // Test Vectors

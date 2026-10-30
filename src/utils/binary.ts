@@ -6,6 +6,8 @@
  * LICENSE file in the root directory of this source tree.
  */
 
+import { Buffer } from 'buffer';
+
 export function lpad(str: string, padString: string, length: number): string {
     while (str.length < length) {
         str = padString + str;

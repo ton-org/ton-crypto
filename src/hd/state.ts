@@ -6,6 +6,8 @@
  * LICENSE file in the root directory of this source tree.
  */
 
+import { Buffer } from 'buffer';
+
 export type HDKeysState = {
     key: Buffer,
     chainCode: Buffer

@@ -6,6 +6,7 @@
  * LICENSE file in the root directory of this source tree.
  */
 
+import { Buffer } from 'buffer';
 import { keyPairFromSeed } from "../primitives/nacl";
 import { deriveED25519HardenedKey, getED25519MasterKeyFromSeed, deriveEd25519Path } from "./ed25519";
 
