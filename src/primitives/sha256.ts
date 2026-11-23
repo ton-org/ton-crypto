@@ -10,17 +10,17 @@ import jsSHA from 'jssha';
 import { sha256 as internal } from '@ton/crypto-primitives';
 
 export function sha256_sync(source: Buffer | string): Buffer {
-    let src: string;
+    let src: Buffer;
     if (typeof source === 'string') {
-        src = Buffer.from(source, 'utf-8').toString('hex');
+        src = Buffer.from(source, 'utf-8');
     } else {
-        src = source.toString('hex');
+        src = source;
     }
 
-    let hasher = new jsSHA('SHA-256', 'HEX');
+    let hasher = new jsSHA('SHA-256', 'UINT8ARRAY');
     hasher.update(src);
-    let res = hasher.getHash('HEX');
-    return Buffer.from(res, 'hex');
+    let res = hasher.getHash('UINT8ARRAY');
+    return Buffer.from(res.buffer, res.byteOffset, res.byteLength);
 }
 
 export async function sha256_fallback(source: Buffer | string): Promise<Buffer> {
